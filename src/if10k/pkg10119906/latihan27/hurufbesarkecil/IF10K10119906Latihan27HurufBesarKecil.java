@@ -20,25 +20,20 @@ public class IF10K10119906Latihan27HurufBesarKecil {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        String Kalimat;
-        String nGanti, nJadi;
-        
-        System.out.println("===Program Mengganti Kata===");
-        
-        System.out.print("\nMasukan Kalimat\t : ");
         Scanner scanner = new Scanner(System.in);
-        Kalimat = scanner.nextLine();
+        String kalimat, kalimatHurufBesar, kalimatHurufKecil;
+
+        System.out.print("Masukkan kalimat : ");
+        kalimat = scanner.nextLine();
         
-        System.out.print("Ganti Kata\t : ");
-        nGanti = scanner.nextLine();
-        
-        System.out.print("Menjadi Kata\t : ");
-        nJadi = scanner.nextLine();
-        
-        System.out.println("\n=====Hasil=====");
-        System.out.println("Kalimat Awal : " + Kalimat);
-        String ganti = Kalimat.replace(nGanti,nJadi);
-        System.out.println("Kalimat Baru : " + ganti);
+        System.out.println();
+
+        kalimatHurufBesar = kalimat.toUpperCase();
+        kalimatHurufKecil = kalimat.toLowerCase();
+
+        System.out.println("====Hasil Formatting====");
+        System.out.println("Huruf Besar : " + kalimatHurufBesar);
+        System.out.println("Huruf Kecil : " + kalimatHurufKecil);
     }
     
 }
